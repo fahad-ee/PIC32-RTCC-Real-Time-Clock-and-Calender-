@@ -1,5 +1,5 @@
 /**
- * @file rtc.c
+ * @rtc.c
  * @brief RTCC (Real-Time Clock Calendar) driver for PIC32MZ2048EFG100
  * Provides initialization, time management, and peak hour detection functionality
  * using the microcontroller's internal RTCC peripheral.
@@ -7,6 +7,7 @@
  * Author: Engr. Fahad
  *         Alias: penguin
  * Last Update: August 08, 2025
+ *
  */
 
 #include <xc.h>
@@ -23,7 +24,6 @@ static uint16_t peak_start_minutes = 0;   // Default: 00:00
 static uint16_t peak_end_minutes = 0;     // Default: 00:00
 
 /* RTCC Helper Functions */
-
 /**
  * @brief Converts integer value to BCD format
  * @param value Integer to convert (0-99)
@@ -60,7 +60,6 @@ static uint32_t pack_date(uint16_t year, uint8_t month, uint8_t day) {
 }
 
 /* Core RTCC Functions */
-
 /**
  * @brief Low-level RTCC hardware initialization
  * @param time Pre-formatted TIME register value
@@ -123,10 +122,8 @@ void RTC_Initialize(uint16_t year, uint8_t month, uint8_t day,
 }
 
 /* Time Management Functions */
-
 /**
  * @brief Updates the global current_datetime string with current RTCC values
- * 
  * Performs consistent reads of both TIME and DATE registers to ensure
  * values are read within the same second.
  */
@@ -174,7 +171,6 @@ void RTC_UpdateDateTime(void) {
 }
 
 /* Peak Hour Functions */
-
 /**
  * @brief Configures peak hour time window
  * @param start_hour Starting hour (0-23)
@@ -190,7 +186,6 @@ void setpeakhours(uint8_t start_hour, uint8_t start_min,
 
 /**
  * @brief Checks if current time falls within peak hours
- * 
  * Updates the multiTariff flag and outputs status via UART
  */
 void checkPeakHours(void) {
@@ -226,7 +221,6 @@ void checkPeakHours(void) {
 }
 
 /* Utility Functions */
-
 /**
  * @brief Displays current datetime via UART
  */
