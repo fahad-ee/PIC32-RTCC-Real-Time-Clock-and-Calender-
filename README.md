@@ -71,21 +71,14 @@ Software Requirements
 ✔ Basic understanding of register-level programming
 ## Updates and Bugs
 Planned Improvements
-
 🔹 Multiple peak periods (e.g., morning + evening peak hours)
-
 🔹 Day-specific rules (weekdays vs. weekends)
-
 🔹 Leap year handling (currently relies on correct user input)
-
 🔹 Low-power mode support (battery backup optimization)
 
 Known Limitations
-
 ⚠ Single peak window per day (only one start/end time supported).
-
 ⚠ No timezone handling (assumes 24-hour UTC-like operation).
-
 ⚠ Year 2000-2099 assumption (2-digit BCD year storage).
 ## Authors
 
