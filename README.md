@@ -6,17 +6,17 @@ This repository contains a complete bare-metal driver for the PIC32MZ2048EFG100'
 
 
 ## Contents
-Features
+1. Features
 
-Who Should Use This Repo?
+2. Who Should Use This Repo?
 
-PIC32MZ2048EFG100
+3. PIC32MZ2048EFG100
 
-Prerequisites
+4. Prerequisites
 
-Updates & Bugs
+5. Updates & Bugs
 
-Deployment
+6. Deployment
 ## Features
 
 ✅ Pure Bare-Metal Implementation – No HAL, no middleware, just direct register manipulation.
