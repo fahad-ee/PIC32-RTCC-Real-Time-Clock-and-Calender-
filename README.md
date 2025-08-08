@@ -18,6 +18,7 @@ Updates & Bugs
 
 Deployment
 ## Features
+
 ✅ Pure Bare-Metal Implementation – No HAL, no middleware, just direct register manipulation.
 
 ✅ Atomic RTCC Initialization – Follows Microchip’s exact recommended hardware sequence.
@@ -29,6 +30,8 @@ Deployment
 ✅ Hardware-Optimized – Uses cycle-accurate delays (NOP instructions) for stability.
 
 ✅ BCD ↔ Decimal Conversion – Efficient handling of RTC register formats.
+
+
 ## Who should use this rep?
 This repository is ideal for:
 
